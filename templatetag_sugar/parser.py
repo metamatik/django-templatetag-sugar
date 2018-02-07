@@ -5,7 +5,9 @@ try:
     from django.db.models.loading.cache import get_model
 except ImportError:
     from django.apps import apps
-    get_model = apps.get_modelfrom django.template import TemplateSyntaxError
+    get_model = apps.get_model
+
+from django.template import TemplateSyntaxError
 
 from templatetag_sugar.node import SugarNode
 
